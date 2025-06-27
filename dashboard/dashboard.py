@@ -16,7 +16,7 @@ import seaborn as sns
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
 # Load data
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv("dashboard/main_data.csv")
 
 # Judul dashboard
 st.title("🚴‍♀️ Bike Sharing Dashboard")
