@@ -9,8 +9,9 @@ Original file is located at
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
+pip install matplotlib
+import matplotlib.pyplot as plt
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
