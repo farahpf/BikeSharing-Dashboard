@@ -83,7 +83,8 @@ elif opsi == "Kondisi Cuaca":
         3: 'Light Snow or Rain',
         4: 'Heavy Rain or Fog'
     }
-    filtered_df['weather_desc'] = filtered_df['weathersit'].map(weather_labels)
+    filtered_df['weather_desc'] = filtered_df['weathersit'].map(weather_labels).fillna("Unknown")
+
 
     fig, ax = plt.subplots()
     sns.boxplot(x='weather_desc', y='cnt', data=filtered_df, palette='coolwarm', ax=ax)
