@@ -4,7 +4,9 @@ Dashboard interaktif berbasis Streamlit untuk menganalisis data peminjaman seped
 
 ## Deskripsi Proyek
 
-Proyek ini dibuat sebagai bagian dari submission akhir kelas *Analisis Data dengan Python* dari Dicoding. Tujuan utama proyek adalah melakukan analisis eksploratif dan visualisasi interaktif terhadap data peminjaman sepeda berdasarkan faktor-faktor seperti musim, cuaca, tipe pengguna, hari kerja, dan lainnya.
+Proyek ini dibuat sebagai bagian dari submission akhir kelas **Analisis Data dengan Python** dari Dicoding. Tujuan utamanya adalah melakukan analisis eksploratif dan visualisasi interaktif terhadap data peminjaman sepeda berdasarkan faktor-faktor seperti musim, cuaca, tipe pengguna, hari kerja, dan lainnya.  
+Dashboard ini juga dilengkapi dengan fitur **filter interaktif berdasarkan tanggal** untuk mengeksplorasi data secara dinamis.
+
 
 ## Struktur Direktori
 
@@ -16,7 +18,11 @@ SUBMISSION/
 │ └── day.csv # Dataset mentah (asli) dari Bike Sharing
 ├── notebook.ipynb # Exploratory Data Analysis dan visualisasi
 ├── requirements.txt # Daftar dependencies Python
+├── url.txt # Link dashboard Streamlit
 └── README.md # Dokumentasi proyek
+
+
+## Cara Menjalankan Dashboard
 
 
 ## Cara Menjalankan Dashboard
@@ -25,7 +31,7 @@ SUBMISSION/
 
    ```bash
    git clone <repo-url>
-   cd SUBMISSION
+   cd Submission
 2. **Install semua dependensi** : 
 pip install -r requirements.txt
 
@@ -37,11 +43,11 @@ Streamlit biasanya akan terbuka otomatis di localhost:8501
 
 ## Fitur Analisis
 Dashboard mencakup analisis interaktif berikut:
-- Distribusi jumlah peminjaman harian
-- Korelasi antar fitur numerik
-- Pengaruh musim dan bulan terhadap peminjaman
+- Filter berdasarkan tanggal (fitur interaktif sidebar)
+- Distribusi jumlah peminjaman harian 
+- Pengaruh musim dan bulan terhadap peminjaman 
 - Perbandingan hari kerja vs libur/akhir pekan
-- Pengaruh kondisi cuaca
+- Pengaruh kondisi cuaca 
 - Segmentasi tipe pengguna (casual vs registered)
 
 ## Teknologi yang Digunakan
