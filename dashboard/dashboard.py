@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
 # Load data
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv("dashboard/main_data.csv")
 
 # Konversi kolom tanggal ke format datetime
 df["dteday"] = pd.to_datetime(df["dteday"])
